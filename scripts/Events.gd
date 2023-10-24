@@ -1,7 +1,5 @@
 extends Node
 
-var is_game_over : bool = false
-# used in: Breakout.gd, Paddle.gd
 
 # warning-ignore:unused_signal
 signal ball_spawn_init
@@ -31,7 +29,7 @@ signal ball_hit_ceiling(ball)
 # warning-ignore:unused_signal
 signal ball_hit_floor(ball)
 # from: Ball.gd
-# to: Breakout.gd, Hud.gd
+# to: Breakout.gd, UI.gd
 
 # warning-ignore:unused_signal
 signal ball_stuck(ball)
@@ -46,7 +44,15 @@ signal ball_out_of_bounds(ball)
 # warning-ignore:unused_signal
 signal brick_broken(value)
 # from: Brick.gd
-# to: Breakout.gd, Hud.gd
+# to: Breakout.gd, UI.gd
+
+# warning-ignore:unused_signal
+signal score_changed(new_score)
+# from: Breakout.gd
+# to: UI.gd
+
+# warning-ignore:unused_signal
+signal lives_changed(new_lives)
 
 # warning-ignore:unused_signal
 signal level_cleared()
@@ -55,7 +61,7 @@ signal level_cleared()
 
 # warning-ignore:unused_signal
 signal game_over(score)
-# from: Hud.gd
+# from: UI.gd
 # to: Breakout.gd
 
 # warning-ignore:unused_signal
@@ -64,6 +70,16 @@ signal button_selected
 # to: SoundPlayer.gd
 
 # warning-ignore:unused_signal
-signal any_button_pressed
+signal button_pressed
 # from: CustomButton.gd
 # to: SoundPlayer.gd
+
+# warning-ignore:unused_signal
+signal retry_button_pressed
+# from: retry button (instance of CustomButton)
+# to: Breakout.gd, UI.gd
+
+# warning-ignore:unused_signal
+signal exit_button_pressed
+# from: exit button (instance of CustomButton)
+# to: Breakout.gd

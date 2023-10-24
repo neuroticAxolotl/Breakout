@@ -20,8 +20,9 @@ func _ready():
 func _gui_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
+			Events.emit_signal("button_pressed")
 			Events.emit_signal(signal_name)
-			Events.emit_signal("any_button_pressed")
+
 
 
 func _on_mouse_entered():

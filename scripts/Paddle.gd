@@ -12,7 +12,7 @@ func _ready():
 	$FakeBall.visible = false
 	Events.connect("ball_hit_ceiling", self, "_on_ball_hit_ceiling")
 	Events.connect("ball_spawn_init", self, "_on_ball_spawn_init")
-	Events.connect("game_over", self, "_on_game_over")
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(_delta):
@@ -23,7 +23,7 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("right"):
 		var _slide = move_and_slide(Vector2.RIGHT * velocity)
 	
-	if Input.is_action_pressed("up") and $FakeBall.visible and !Events.is_game_over:
+	if Input.is_action_pressed("up") and $FakeBall.visible:
 		Events.emit_signal("ball_served", $FakeBall.global_position)
 		$FakeBall.visible = false
 	
@@ -41,6 +41,7 @@ func shrink():
 	$CollisionShape2DSmall.disabled = false
 
 
+# unused
 func expand():
 	$Sprite.texture = texture_wide
 	$CollisionShape2DSmall.disabled = true
@@ -48,4 +49,5 @@ func expand():
 
 
 func _on_ball_spawn_init():
+	# enables input check for serving the ball in _physics_process()
 	$FakeBall.visible = true

@@ -10,7 +10,7 @@ func _ready():
 	Events.connect("brick_broken", self, "_on_brick_broken")
 	Events.connect("ball_hit_floor", self, "_on_ball_hit_floor")
 	Events.connect("button_selected", self, "_on_button_selected")
-	Events.connect("any_button_pressed", self, "_on_button_pressed")
+	Events.connect("button_pressed", self, "_on_button_pressed")
 	
 
 func _on_ball_collided(_collision):
