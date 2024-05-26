@@ -1,15 +1,7 @@
 # Breakout
-A brick breaker game made in Godot 3.5.1 (W.I.P.)
+A brick breaker game made in Godot 3.5.1
 
-## done:
-- classic mode
-- title screen
-- sounds & effects
-
-## todo:
-- more levels
-- levels mode
-- custom mode
-- title screen submenus (settings, mode select, credits)
-- pause
-- scene navigation
+## Features
+- Classic mode based on the original arcade game
+- Levels mode with 10 different stages
+- Custom mode that lets the player alter game speed, lives etc.
