@@ -1,7 +1,8 @@
 extends KinematicBody2D
 
+var _err
 
-var velocity = 650
+var velocity = Settings.selected_mode["paddle_speed"]
 
 onready var texture_wide = preload("res://sprites/brick_widest.png")
 onready var texture_small = preload("res://sprites/brick.png")
@@ -10,15 +11,15 @@ onready var texture_small = preload("res://sprites/brick.png")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$FakeBall.visible = false
-	Events.connect("ball_hit_ceiling", self, "_on_ball_hit_ceiling")
-	Events.connect("ball_spawn_init", self, "_on_ball_spawn_init")
+	_err = Events.connect("ball_hit_ceiling", self, "_on_ball_hit_ceiling")
+	_err = Events.connect("ball_spawn_init", self, "_on_ball_spawn_init")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(_delta):
 	if Input.is_action_pressed("left"):
 		var _slide = move_and_slide(Vector2.LEFT * velocity)
-		# added to a variable purely to make the editor shut up about the return value
+		
 	
 	if Input.is_action_pressed("right"):
 		var _slide = move_and_slide(Vector2.RIGHT * velocity)
@@ -32,7 +33,8 @@ func _physics_process(_delta):
 
 
 func _on_ball_hit_ceiling(_ball):
-	shrink()
+	if Settings.selected_mode["name"] == "classic":
+		shrink()
 
 
 func shrink():

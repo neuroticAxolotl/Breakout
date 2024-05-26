@@ -1,0 +1,541 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/game/Brick.tscn" type="PackedScene" id=1]
+
+[node name="Classic" type="Node2D"]
+use_parent_material = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Brick" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 584, 228 )
+
+[node name="Brick2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 632, 228 )
+
+[node name="Brick3" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 584, 204 )
+
+[node name="Brick4" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 632, 204 )
+
+[node name="Brick5" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 680, 228 )
+
+[node name="Brick6" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 728, 228 )
+
+[node name="Brick7" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 680, 204 )
+
+[node name="Brick8" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 728, 204 )
+
+[node name="Brick9" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 776, 228 )
+
+[node name="Brick10" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 824, 228 )
+
+[node name="Brick11" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 776, 204 )
+
+[node name="Brick12" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 824, 204 )
+
+[node name="Brick13" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 488, 228 )
+
+[node name="Brick14" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 536, 228 )
+
+[node name="Brick15" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 488, 204 )
+
+[node name="Brick16" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 536, 204 )
+
+[node name="Brick17" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 392, 228 )
+
+[node name="Brick18" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 440, 228 )
+
+[node name="Brick19" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 392, 204 )
+
+[node name="Brick20" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 440, 204 )
+
+[node name="Brick21" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 296, 228 )
+
+[node name="Brick22" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 344, 228 )
+
+[node name="Brick23" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 296, 204 )
+
+[node name="Brick24" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 344, 204 )
+
+[node name="Brick25" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 200, 228 )
+
+[node name="Brick26" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 248, 228 )
+
+[node name="Brick27" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 200, 204 )
+
+[node name="Brick28" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0, 0.890196, 0.223529, 1 )
+position = Vector2( 248, 204 )
+
+[node name="Brick29" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 584, 180 )
+value = 3
+
+[node name="Brick30" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 632, 180 )
+value = 3
+
+[node name="Brick31" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 584, 156 )
+value = 3
+
+[node name="Brick32" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 632, 156 )
+value = 3
+
+[node name="Brick33" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 680, 180 )
+value = 3
+
+[node name="Brick34" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 728, 180 )
+value = 3
+
+[node name="Brick35" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 680, 156 )
+value = 3
+
+[node name="Brick36" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 728, 156 )
+value = 3
+
+[node name="Brick37" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 776, 180 )
+value = 3
+
+[node name="Brick38" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 824, 180 )
+value = 3
+
+[node name="Brick39" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 776, 156 )
+value = 3
+
+[node name="Brick40" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 824, 156 )
+value = 3
+
+[node name="Brick41" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 488, 180 )
+value = 3
+
+[node name="Brick42" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 536, 180 )
+value = 3
+
+[node name="Brick43" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 488, 156 )
+value = 3
+
+[node name="Brick44" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 536, 156 )
+value = 3
+
+[node name="Brick45" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 392, 180 )
+value = 3
+
+[node name="Brick46" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 440, 180 )
+value = 3
+
+[node name="Brick47" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 392, 156 )
+value = 3
+
+[node name="Brick48" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 440, 156 )
+value = 3
+
+[node name="Brick49" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 296, 180 )
+value = 3
+
+[node name="Brick50" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 344, 180 )
+value = 3
+
+[node name="Brick51" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 296, 156 )
+value = 3
+
+[node name="Brick52" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 344, 156 )
+value = 3
+
+[node name="Brick53" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 200, 180 )
+value = 3
+
+[node name="Brick54" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 248, 180 )
+value = 3
+
+[node name="Brick55" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 200, 156 )
+value = 3
+
+[node name="Brick56" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 248, 156 )
+value = 3
+
+[node name="Brick57" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 584, 132 )
+value = 5
+
+[node name="Brick58" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 632, 132 )
+value = 5
+
+[node name="Brick59" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 584, 108 )
+value = 5
+
+[node name="Brick60" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 632, 108 )
+value = 5
+
+[node name="Brick61" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 680, 132 )
+value = 5
+
+[node name="Brick62" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 728, 132 )
+value = 5
+
+[node name="Brick63" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 680, 108 )
+value = 5
+
+[node name="Brick64" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 728, 108 )
+value = 5
+
+[node name="Brick65" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 776, 132 )
+value = 5
+
+[node name="Brick66" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 824, 132 )
+value = 5
+
+[node name="Brick67" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 776, 108 )
+value = 5
+
+[node name="Brick68" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 824, 108 )
+value = 5
+
+[node name="Brick69" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 488, 132 )
+value = 5
+
+[node name="Brick70" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 536, 132 )
+value = 5
+
+[node name="Brick71" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 488, 108 )
+value = 5
+
+[node name="Brick72" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 536, 108 )
+value = 5
+
+[node name="Brick73" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 392, 132 )
+value = 5
+
+[node name="Brick74" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 440, 132 )
+value = 5
+
+[node name="Brick75" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 392, 108 )
+value = 5
+
+[node name="Brick76" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 440, 108 )
+value = 5
+
+[node name="Brick77" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 296, 132 )
+value = 5
+
+[node name="Brick78" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 344, 132 )
+value = 5
+
+[node name="Brick79" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 296, 108 )
+value = 5
+
+[node name="Brick80" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 344, 108 )
+value = 5
+
+[node name="Brick81" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 200, 132 )
+value = 5
+
+[node name="Brick82" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 248, 132 )
+value = 5
+
+[node name="Brick83" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 200, 108 )
+value = 5
+
+[node name="Brick84" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.666667, 0, 1 )
+position = Vector2( 248, 108 )
+value = 5
+
+[node name="Brick85" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 584, 84 )
+value = 7
+
+[node name="Brick86" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 632, 84 )
+value = 7
+
+[node name="Brick87" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 584, 60 )
+value = 7
+
+[node name="Brick88" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 632, 60 )
+value = 7
+
+[node name="Brick89" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 680, 84 )
+value = 7
+
+[node name="Brick90" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 728, 84 )
+value = 7
+
+[node name="Brick91" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 680, 60 )
+value = 7
+
+[node name="Brick92" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 728, 60 )
+value = 7
+
+[node name="Brick93" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 776, 84 )
+value = 7
+
+[node name="Brick94" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 824, 84 )
+value = 7
+
+[node name="Brick95" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 776, 60 )
+value = 7
+
+[node name="Brick96" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 824, 60 )
+value = 7
+
+[node name="Brick97" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 488, 84 )
+value = 7
+
+[node name="Brick98" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 536, 84 )
+value = 7
+
+[node name="Brick99" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 488, 60 )
+value = 7
+
+[node name="Brick100" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 536, 60 )
+value = 7
+
+[node name="Brick101" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 392, 84 )
+value = 7
+
+[node name="Brick102" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 440, 84 )
+value = 7
+
+[node name="Brick103" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 392, 60 )
+value = 7
+
+[node name="Brick104" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 440, 60 )
+value = 7
+
+[node name="Brick105" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 296, 84 )
+value = 7
+
+[node name="Brick106" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 344, 84 )
+value = 7
+
+[node name="Brick107" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 296, 60 )
+value = 7
+
+[node name="Brick108" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 344, 60 )
+value = 7
+
+[node name="Brick109" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 200, 84 )
+value = 7
+
+[node name="Brick110" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 248, 84 )
+value = 7
+
+[node name="Brick111" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 200, 60 )
+value = 7
+
+[node name="Brick112" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0.19, 0.19, 1 )
+position = Vector2( 248, 60 )
+value = 7

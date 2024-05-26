@@ -11,13 +11,17 @@ config_version=4
 [application]
 
 config/name="Breakout"
-run/main_scene="res://scenes/ClassicMode.tscn"
+run/main_scene="res://scenes/menus/TitleScreen.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Settings="*res://scripts/Settings.gd"
 Events="*res://scripts/Events.gd"
+
+[debug]
+
+gdscript/warnings/unused_signal=false
 
 [gui]
 

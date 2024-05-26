@@ -1,6 +1,7 @@
 tool
 extends NinePatchRect
 
+var _err
 
 onready var default_sprite = preload("res://sprites/box_black_bg.png")
 onready var selected_sprite = preload("res://sprites/box_black_bg_thick.png")
@@ -8,21 +9,19 @@ onready var selected_sprite = preload("res://sprites/box_black_bg_thick.png")
 export var label_text : String = "BUTTON" setget set_label_text
 export var label_font_size : int = 22 setget set_label_size
 
-export var signal_name : String = "" setget set_signal_name
+export var button_name : String = "" setget set_button_name
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.connect("mouse_entered", self, "_on_mouse_entered")
-	self.connect("mouse_exited", self, "_on_mouse_exited")
+	_err = self.connect("mouse_entered", self, "_on_mouse_entered")
+	_err = self.connect("mouse_exited", self, "_on_mouse_exited")
 
 
 func _gui_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
-			Events.emit_signal("button_pressed")
-			Events.emit_signal(signal_name)
-
+			Events.emit_signal("button_pressed", button_name)
 
 
 func _on_mouse_entered():
@@ -46,7 +45,7 @@ func set_label_size(new_size):
 	$Label.add_font_override("font", font)
 
 
-func set_signal_name(new_signal_name):
-	signal_name = new_signal_name
+func set_button_name(new_button_name):
+	button_name = new_button_name
 
 

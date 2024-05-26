@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/ColorBrick.gd" type="Script" id=1]
+[ext_resource path="res://scenes/game/ParticleBurst.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/game/Brick.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24, 12 )
+
+[node name="ColorBrick" instance=ExtResource( 3 )]
+modulate = Color( 1, 0.188235, 0.188235, 1 )
+script = ExtResource( 1 )
+size = "1.0"
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+shape = SubResource( 1 )
+
+[node name="CPUParticles2D" parent="." index="2" instance=ExtResource( 2 )]

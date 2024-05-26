@@ -3,6 +3,7 @@ extends Camera2D
 # script modified from this:
 # https://shaggydev.com/2022/02/23/screen-shake-godot/
 
+var _err
 
 # How quickly to move through the noise
 export var NOISE_SHAKE_SPEED: float = 40.0
@@ -29,9 +30,10 @@ func _ready() -> void:
 	# Period affects how quickly the noise changes values
 	noise.period = 2
 
-	Events.connect("ball_hit_floor", self, "_on_ball_hit_floor")
+	_err = Events.connect("ball_hit_floor", self, "_shake")
+	_err = Events.connect("brick_broken", self, "_shake")
 
-func _on_ball_hit_floor(_ball):
+func _shake(_value):
 	if Settings.screen_shake_on:
 		apply_noise_shake()
 

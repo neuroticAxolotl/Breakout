@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/game/Brick.tscn" type="PackedScene" id=1]
+
+[node name="UnbreakableBrick" instance=ExtResource( 1 )]
+hp = 9999
+value = 0
+
+[node name="Sprite" parent="." index="0"]
+modulate = Color( 0.34902, 0.352941, 0.380392, 1 )

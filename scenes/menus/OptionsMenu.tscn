@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://TeenyTinyPixls_16px.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/OptionsMenu.gd" type="Script" id=2]
+[ext_resource path="res://theme.tres" type="Theme" id=3]
+[ext_resource path="res://sprites/box_black_bg.png" type="Texture" id=4]
+
+[sub_resource type="GDScript" id=5]
+script/source = "extends CheckBox
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+"
+
+[node name="OptionsMenu" type="Control"]
+margin_left = 320.0
+margin_top = 216.0
+margin_right = 320.0
+margin_bottom = 216.0
+
+[node name="Elements" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
+
+[node name="MenuBackgroundPanel" type="NinePatchRect" parent="Elements"]
+margin_top = 24.0
+margin_right = 384.0
+margin_bottom = 248.0
+grow_horizontal = 2
+texture = ExtResource( 4 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="FilterToggle" type="CheckBox" parent="Elements"]
+margin_left = 104.0
+margin_top = 128.0
+margin_right = 268.0
+margin_bottom = 168.0
+theme = ExtResource( 3 )
+custom_constants/check_vadjust = 0
+pressed = true
+text = "CRT FILTER"
+script = SubResource( 5 )
+
+[node name="ShakeToggle" type="CheckBox" parent="Elements"]
+margin_left = 104.0
+margin_top = 177.0
+margin_right = 294.0
+margin_bottom = 217.0
+theme = ExtResource( 3 )
+custom_constants/check_vadjust = 0
+pressed = true
+text = "SCREEN SHAKE"
+
+[node name="VolumeSlider" type="HSlider" parent="Elements"]
+margin_left = 104.0
+margin_top = 83.0
+margin_right = 280.0
+margin_bottom = 107.0
+theme = ExtResource( 3 )
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="ValueLabel" type="Label" parent="Elements/VolumeSlider"]
+margin_left = 96.0
+margin_top = -24.0
+margin_right = 148.0
+margin_bottom = -4.0
+custom_fonts/font = ExtResource( 1 )
+text = "80%"
+valign = 1
+
+[node name="Label" type="Label" parent="Elements/VolumeSlider"]
+margin_top = -24.0
+margin_right = 91.0
+margin_bottom = -4.0
+custom_fonts/font = ExtResource( 1 )
+text = "SOUNDS:"
+align = 1
+valign = 1
+
+[node name="ButtonBack" type="Button" parent="Elements"]
+margin_left = 4.0
+margin_top = 28.0
+margin_right = 72.0
+margin_bottom = 56.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "BACK"
